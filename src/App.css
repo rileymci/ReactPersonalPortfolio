@@ -1,17 +1,17 @@
 /* Custom Fonts*/
 @font-face {
   font-family: Centra;
-  src: url('../assets/font/CentraNo2-Bold.ttf');
+  src: url('assets/font/CentraNo2-Bold.ttf');
   font-weight: 700;
 }
 @font-face {
   font-family: Centra;
-  src: url('../assets/font/CentraNo2-Medium.ttf');
+  src: url('assets/font/CentraNo2-Medium.ttf');
   font-weight: 500;
 }
 @font-face {
   font-family: Centra;
-  src: url('../assets/font/CentraNo2-Book.ttf');
+  src: url('assets/font/CentraNo2-Book.ttf');
   font-weight: 400;
 }
 
@@ -67,7 +67,7 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand{
-  width: 9%;
+  width: 15%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -222,6 +222,98 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
+}
+
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/gb-milky.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner .tagline{
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: none;
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.banner p{
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner button:hover svg {
+  margin-left: 25px;
+}
+
+.banner img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  animation: updown 3s linear infinite;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 5px;
+  margin-left: 20px;
+}
+
+
+@keyframes updown {
+  0% {
+    transform: scale(0.95)
+  }
+  25% {
+    transform: scale(0.98);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(0.95);
+  }
+  
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
 }
 
 .App {
