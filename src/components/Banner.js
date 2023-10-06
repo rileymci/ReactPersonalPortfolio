@@ -6,7 +6,7 @@ import headerImg from "../assets/img/test.jpg";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Designer", "Web Developer", "UI/UX Designer"];
+    const toRotate = ["Software Engineer", "Electrical Engineer", "Web Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300, - Math.random() * 100);
     const period = 2000;
@@ -50,8 +50,8 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi I'm Riley Mcilwain! - `}<span className="wrap">{text}</span></h1>
-                        <p>This paragraph right here will be talking a little about myself placeholder, fill it in asap</p>
-                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
+                    <p>Undergraduate Computer Software Systems Engineer @ QUT</p>
+                        <button onClick={() => console.log('connect')}>Contact Me <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header"/>

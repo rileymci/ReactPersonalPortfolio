@@ -44,13 +44,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: normal;
 }
 
-p.success {
-  color: green;
-}
-
-p.danger {
-  color: red;
-}
 
 nav.navbar {
   padding: 18px 0;
@@ -59,6 +52,16 @@ nav.navbar {
   top: 0;
   z-index: 999;
   transition: 0.32 ease-in-out;
+}
+
+nav.navbar h3{
+  color: white;
+  font-family: 'Centra';
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-style: italic;
+  text-shadow: 4px 4px #121212;
 }
 
 nav.navbar.scrolled {
@@ -232,6 +235,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  border-bottom: white;
+  border-bottom-style: solid;
 }
 
 .banner .tagline{
@@ -254,7 +259,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner p{
-  color: #b8b8b8;
+  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -262,9 +267,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button {
-  color: #fff;
+  border: none;
+  background-color: transparent;
+  color: white;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 26px;
   margin-top: 60px;
   letter-spacing: 0.8px;
   display: flex;
@@ -320,7 +327,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Skills */
 
 .skill{
-  padding: 100px 0 50px 0;
+  padding: 200px 0 50px 0;
   position: relative;
 }
 
@@ -358,11 +365,171 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 }
 
+.skill-slider .item img:hover{
+  scale: 1.1;
+}
+
 .background-image-left {
-  top: 28%;
+  top: 20%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 100%;
+  right: 0;
+  z-index: -4;
+  margin-top: -1000px;
+}
+
+
+/* Projects */
+.project {
+  padding: 80px 0;
+  position: relative;
+}
+
+.project-bx {
+  background: #292626;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+  border-style: solid;
+}
+
+.project h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.project p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+
+.project .nav.nav-pills{
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgba(255 255 255 / 10%);
+  overflow: hidden;
+}
+
+.project .nav.nav-pills .nav-item {
+  width: 33.33333%;
+}
+
+.project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position:relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+
+.project .nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #137986 -5.91%, #03a783 150%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.project .nav.nav-pills .nav-link.active::before {
+  width: 100% !important;
+}
+
+.project .nav.nav-pills .nav-link.active {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+
+.nav-link#projects-tabs-tab-second {
+  border-top: 1px solid rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.nav-link#projects-tabs-tab-third {
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 0px 55px 55px 0px;
+}
+
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.proj-imgbx::before{
+  content: "";
+  background: linear-gradient(90.21deg, #137986 -5.91%, #03a783 150%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.proj-imgbx:hover::before{
+  height: 100%;
+}
+
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+
+.proj-txtx h4{
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+
+.proj-txtx span{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
   z-index: -4;
 }
 
