@@ -4,6 +4,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/tba.png";
 import projImg2 from "../assets/img/tba.png";
 import projImg3 from "../assets/img/tba.png";
+import projImg4 from "../assets/img/pynq.jpg";
 
 export const Projects = () => {
 
@@ -11,7 +12,7 @@ export const Projects = () => {
         {
             title: "Project Name",
             desciption: "Design & Development",
-            imgUrl: projImg1,
+            imgUrl: projImg4,
         },
         {
             title: "Project Name",

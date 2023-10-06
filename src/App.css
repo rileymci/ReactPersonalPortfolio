@@ -293,32 +293,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   max-width: 100%;
   max-height: 100%;
   border-radius: 50%;
-  animation: updown 3s linear infinite;
   border-style: solid;
   border-color: #ffffff;
   border-width: 5px;
-  margin-left: 20px;
+  margin-left: 0px;
+  animation: updown 4s infinite;
 }
-
 
 @keyframes updown {
   0% {
-    transform: scale(0.95)
+    transform: translateY(-5px)
   }
-  25% {
-    transform: scale(0.98);
-  }
+
   50% {
-    transform: scale(1);
+    transform: translateY(10px);
   }
-  75% {
-    transform: scale(0.98);
-  }
+
   100% {
-    transform: scale(0.95);
+    transform: translateY(-5px);
   }
   
 }
+
 
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
@@ -531,6 +527,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.education {
+  padding: 80px 0;
+  position: relative;
+}
+
+.education-bx {
+  background: #292626;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+  border-style: solid;
+}
+
+.education h2 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .App {

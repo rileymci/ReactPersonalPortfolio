@@ -4,6 +4,7 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github.svg';
 import navIcon3 from '../assets/img/youtube.svg';
+import ResumeDoc from '../assets/resume/RileyMcilwainCV2023.pdf'
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -48,11 +49,11 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-                <a href="/#"><img src={navIcon1} alt="" /></a>
-                <a href="/#"><img src={navIcon2} alt="" /></a>
-                <a href="/#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/riley-mcilwain-4081681b1/"><img src={navIcon1} alt="" /></a>
+                <a href="https://github.com/rileymci"><img src={navIcon2} alt="" /></a>
+                <a href="https://www.youtube.com/"><img src={navIcon3} alt="" /></a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}><span>Resume</span></button>
+            <a href={ResumeDoc} download="RileyMcilwainCV" target='blank'><button className="vvd"><span>Resume</span></button></a>
           </span>
         </Navbar.Collapse>
       </Container>
