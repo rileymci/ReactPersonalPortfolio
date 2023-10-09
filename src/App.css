@@ -80,7 +80,26 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  position: relative;
 }
+
+nav.navbar .navbar-nav .nav-link.navbar-link::after {
+  content: '';
+  height: 2px;
+  width: 0%;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link:hover::after {
+ width: 100%;
+ transition: ease-in-out 0.5s;
+}
+
+
 
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link:active {
