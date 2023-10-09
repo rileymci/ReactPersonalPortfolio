@@ -51,6 +51,7 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 999;
+  opacity: 1;
   transition: 0.32 ease-in-out;
 }
 
@@ -60,13 +61,17 @@ nav.navbar h3{
   font-weight: bold;
   font-size: 50px;
   letter-spacing: 3px;
-  font-style: italic;
+  font-style: normal;
   text-shadow: 4px 4px #121212;
 }
 
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: #121212;
+  opacity: 0.9;
+  border-color: #fff;
+  border-bottom: solid;
+  border-bottom-width: 2px;
 }
 
 nav.navbar a.navbar-brand{
@@ -85,17 +90,19 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 
 nav.navbar .navbar-nav .nav-link.navbar-link::after {
   content: '';
+  opacity: 0.2;
   height: 2px;
   width: 0%;
   background-color: #ffffff;
   position: absolute;
-  bottom: -2px;
+  bottom: -6px;
   left: 0;
   
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link:hover::after {
  width: 100%;
+ opacity: 1;
  transition: ease-in-out 0.5s;
 }
 
@@ -376,7 +383,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-slider .item img{
   width: 50%;
-  margin: 0 auto 15px auto;
+  margin: 10px auto 15px auto;
 
 }
 
