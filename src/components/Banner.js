@@ -51,7 +51,7 @@ export const Banner = () => {
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi I'm Riley Mcilwain! - `}<span className="wrap">{text}</span></h1>
                     <p>Undergraduate Computer Software Systems Engineer @ QUT</p>
-                        <button onClick={() => console.log('connect')}>Contact Me <ArrowRightCircle size={25} /></button>
+                    <button><a href="mailto:rileymcilwain2000@gmail.com">Contact Me <ArrowRightCircle size={25} /></a></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header"/>

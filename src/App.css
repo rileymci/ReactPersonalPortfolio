@@ -302,6 +302,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+}
+
+.banner button a,
+.banner button a:link,
+.banner button a:visited,
+.banner button a:hover,
+.banner button a:active {
+  text-decoration: none;
+  color: #fff;
 }
 
 .banner button svg {
