@@ -6,9 +6,9 @@ import headerImg from "../assets/img/test.jpg";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Software Engineer", "Electrical Engineer", "Web Developer"];
+    const toRotate = ["Software Engineer", "Electrical Engineer", "Web Developer", "Front-End Developer"];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300, - Math.random() * 100);
+    const [delta, setDelta] = useState(200, 200);
     const period = 1500;
 
 
@@ -38,7 +38,7 @@ export const Banner = () => {
         } else if(isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(200);
         }
 
     }
