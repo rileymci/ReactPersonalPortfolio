@@ -1,43 +1,52 @@
 import { Col, Container, Row, TabContainer, Nav, Tab } from "react-bootstrap"
 import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import projImg1 from "../assets/img/tba.png";
-import projImg2 from "../assets/img/tba.png";
-import projImg3 from "../assets/img/tba.png";
-import projImg4 from "../assets/img/pynq.jpg";
+import projImg4 from "../assets/img/calculator.png";
+import projImg2 from "../assets/img/etchsketch.png";
+import projImg3 from "../assets/img/tictactoe.png";
+import projImg1 from "../assets/img/pynqedge.png";
+import projImg5 from "../assets/img/project1.png";
+import projImg6 from "../assets/img/website.png";
 
 export const Projects = () => { 
 
     const projects = [
         {
-            title: "Project Name",
-            desciption: "Design & Development",
-            imgUrl: projImg4,
-        },
-        {
-            title: "Project Name",
-            desciption: "Design & Development",
-            imgUrl: projImg2,
-        },
-        {
-            title: "Project Name",
-            desciption: "Design & Development",
-            imgUrl: projImg3,
-        },
-        {
-            title: "Project Name",
-            desciption: "Design & Development",
+            title: "PYNQ FPGA - Edge Detection",
+            desciption: "",
             imgUrl: projImg1,
+            projectUrl: ""
         },
         {
-            title: "Project Name",
-            desciption: "Design & Development",
+            title: "Etch-a-Sketch",
+            desciption: "",
             imgUrl: projImg2,
+            projectUrl: "https://rileymci.github.io/Etch-a-Sketch/",
+
         },
         {
-            title: "Project Name",
-            desciption: "Design & Development",
+            title: "Tic Tac Toe",
+            desciption: "",
             imgUrl: projImg3,
+            projectUrl: "https://rileymci.github.io/TicTacToe/",
+        },
+        {
+            title: "Calculator",
+            desciption: "",
+            imgUrl: projImg4,
+            projectUrl: "https://rileymci.github.io/A-Simple-Calculator/",
+        },
+        {
+            title: "Motor Embedded System",
+            desciption: "",
+            imgUrl: projImg5,
+        },
+        {
+            title: "React Website Portfolio",
+            desciption: "",
+            imgUrl: projImg6,
+            projectUrl: "https://github.com/rileymci/ReactPersonalPortfolio/",
+            
         },
     ]
 

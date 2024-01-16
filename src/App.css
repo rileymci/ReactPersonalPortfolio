@@ -551,6 +551,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 24px;
 }
 
+.proj-imgbx img {
+  object-fit: fill;
+  background-color: #137986;
+  width: 100%;
+  height: 400px;
+  
+}
+
 .proj-imgbx::before{
   content: "";
   background: linear-gradient(90.21deg, #137986 -5.91%, #03a783 150%);
@@ -586,6 +594,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+  text-decoration:underline;
+  color: white;
+  text-decoration-color: white;
 }
 
 .proj-txtx span{
