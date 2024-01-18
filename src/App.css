@@ -464,6 +464,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .project p {
@@ -549,6 +550,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+
 }
 
 .proj-imgbx img {

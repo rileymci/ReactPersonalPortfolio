@@ -46,7 +46,6 @@ export const Skills = () => {
                         <h2>
                             Skills
                         </h2>
-                        <p>These are a list of skills I use on a daily basis.</p>
                         <Carousel responsive={responsive} infinite={true} className="skill-slider">
                             <div className="item">
                                 <img src={react} alt="Image"/>
