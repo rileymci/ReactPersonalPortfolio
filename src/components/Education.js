@@ -18,7 +18,7 @@ export const Education = () => {
         <h2>Education</h2>
         <Carousel className="education-slider">
                 <Carousel.Item interval={3000}>
-                    <img style={{height:'50vh'}}
+                    <img style={{height:'60vh'}}
                     className="d-block w-100" 
                     src={qut}
                     />
@@ -28,7 +28,7 @@ export const Education = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={3000}>
-                    <img style={{height:'50vh'}}
+                    <img style={{height:'60vh'}}
                     className="d-block w-100" 
                     src={rochedale2}
                     />
