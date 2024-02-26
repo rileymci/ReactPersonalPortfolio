@@ -4,7 +4,7 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github.svg';
 import navIcon3 from '../assets/img/youtube.svg';
-import ResumeDoc from '../assets/resume/RileyMcilwainCV2023.pdf'
+import ResumeDoc from '../assets/resume/RileyMcilwainCV2024.pdf'
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
