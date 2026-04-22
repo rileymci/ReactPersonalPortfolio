@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github.svg';
 import navIcon3 from '../assets/img/youtube.svg';
 import ResumeDoc from '../assets/resume/RileyMcilwainResume2026.pdf'
 
 export const NavBar = () => {
-  const [activeLink, setActiveLink] = useState('home');
   const [scrolled, seScrolled] = useState(false);
 
   useEffect(() => {
@@ -26,11 +24,6 @@ export const NavBar = () => {
 
   }, [])
 
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  }
-
-
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
@@ -45,9 +38,9 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/riley-mcilwain-4081681b1/" target="_blank"><img src={navIcon1} alt="" /></a>
-              <a href="https://github.com/rileymci" target="_blank"><img src={navIcon2} alt="" /></a>
-              <a href="https://www.youtube.com/" target="_blank"><img src={navIcon3} alt="" /></a>
+              <a href="https://www.linkedin.com/in/riley-mcilwain-4081681b1/" target="_blank" rel="noreferrer"><img src={navIcon1} alt="" /></a>
+              <a href="https://github.com/rileymci" target="_blank" rel="noreferrer"><img src={navIcon2} alt="" /></a>
+              <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><img src={navIcon3} alt="" /></a>
             </div>
             <a href={ResumeDoc} download="RileyMcilwainCV" target='blank'><button className="vvd"><span>Resume</span></button></a>
           </span>
