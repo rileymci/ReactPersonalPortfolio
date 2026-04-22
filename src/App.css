@@ -38,6 +38,13 @@ body {
   font-family: 'Centra', sans-serif !important;
 }
 
+@media only screen and (min-width: 992px) {
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -52,7 +59,7 @@ nav.navbar {
   top: 0;
   z-index: 999;
   opacity: 1;
-  transition: 0.32 ease-in-out;
+  transition: background-color 0.32s ease-in-out, border-color 0.32s ease-in-out;
 }
 
 nav.navbar h3{
@@ -66,7 +73,6 @@ nav.navbar h3{
 }
 
 nav.navbar.scrolled {
-  padding: 5px 0;
   background-color: #121212;
   opacity: 0.9;
   border-color: #fff;
@@ -275,13 +281,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/gb-milky.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+  background: linear-gradient(135deg, #0f3d2e 0%, #1a7a4c 50%, #3dbb7c 100%);
+  height: 100vh;
+  overflow: hidden;
   border-bottom: white;
   border-bottom-style: solid;
+}
+
+@media only screen and (max-width: 991px) {
+  .banner {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    padding: 180px 0 60px 0;
+  }
 }
 
 .banner .tagline{

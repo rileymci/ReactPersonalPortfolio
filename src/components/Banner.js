@@ -6,7 +6,7 @@ import headerImg from "../assets/img/test.jpg";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Software Engineer", "Electrical Engineer", "Web Developer", "Front-End Developer"];
+    const toRotate = ["Software Engineer", "Front-End Engineer", "Back-End Engineer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(200, 200);
     const period = 1500;
@@ -18,7 +18,7 @@ export const Banner = () => {
         }, delta)
 
 
-        return () => { clearInterval(ticker)};
+        return () => { clearInterval(ticker) };
     }, [text])
 
     const tick = () => {
@@ -28,14 +28,14 @@ export const Banner = () => {
 
         setText(updatedText);
 
-        if(isDeleting) {
+        if (isDeleting) {
             setDelta(prevDelta => prevDelta / 2)
         }
 
-        if(!isDeleting && updatedText === fullText) {
+        if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true);
             setDelta(period);
-        } else if(isDeleting && updatedText === '') {
+        } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             setDelta(200);
@@ -50,11 +50,11 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>{`Hi I'm Riley Mcilwain! - `}<span className="wrap">{text}</span></h1>
-                    <p>Undergraduate Computer Software Systems Engineer @ QUT</p>
-                    <button><a href="mailto:rileymcilwain2000@gmail.com">Contact Me <ArrowRightCircle size={25} /></a></button>
+                        <p>Junior Software Engineer @ Software Adventures</p>
+                        <button><a href="mailto:rileymcilwain2000@gmail.com">Contact Me <ArrowRightCircle size={25} /></a></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header"/>
+                        <img src={headerImg} alt="Header" />
                     </Col>
                 </Row>
             </Container>
